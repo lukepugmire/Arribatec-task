@@ -1,0 +1,81 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: rgb(236, 236, 236);
+  font-family: poppins;
+  .container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+  }
+  .title {
+    @include defaultFlex;
+    flex: none;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    h1 {
+      color: rgb(65, 65, 65);
+      font-size: 52px;
+      margin: 0rem 0rem 0rem 8rem;
+      width: 50%;
+    }
+    h2 {
+      color: rgb(150, 150, 150);
+      font-size: 42px;
+      margin: 0rem 0rem 0rem 8rem;
+      position: relative;
+      width: 50%;
+      left: 8rem;
+      bottom: 2rem;
+    }
+  }
+}
+
+.navigation {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  a {
+    color: rgb(71, 71, 71);
+    transition: 0.2s ease-in-out;
+    &:hover {
+      color: rgb(202, 202, 202);
+    }
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  body {
+    .title {
+      @include defaultFlex;
+      flex: none;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      align-items: center;
+      h1 {
+        color: rgb(65, 65, 65);
+        font-size: 28px;
+        margin: 0rem;
+        width: 50%;
+        text-align: center;
+      }
+      h2 {
+        color: rgb(150, 150, 150);
+        font-size: 18px;
+        margin: 0rem;
+        position: relative;
+        width: 50%;
+        left: 0rem;
+        bottom: 0rem;
+        text-align: center;
+      }
+    }
+  }
+  .navigation {
+    font-size: 12px;
+    top: 2rem;
+  }
+}

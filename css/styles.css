@@ -1,0 +1,384 @@
+body {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-color: #ececec;
+  font-family: poppins;
+}
+
+body .container {
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 0;
+  padding: 0;
+}
+
+body .title {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-flex: 0;
+      -ms-flex: none;
+          flex: none;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+body .title h1 {
+  color: #414141;
+  font-size: 52px;
+  margin: 0rem 0rem 0rem 8rem;
+  width: 50%;
+}
+
+body .title h2 {
+  color: #969696;
+  font-size: 42px;
+  margin: 0rem 0rem 0rem 8rem;
+  position: relative;
+  width: 50%;
+  left: 8rem;
+  bottom: 2rem;
+}
+
+.navigation {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+}
+
+.navigation a {
+  color: #474747;
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+}
+
+.navigation a:hover {
+  color: #cacaca;
+}
+
+@media only screen and (max-width: 600px) {
+  body .title {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-flex: 0;
+        -ms-flex: none;
+            flex: none;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  body .title h1 {
+    color: #414141;
+    font-size: 28px;
+    margin: 0rem;
+    width: 50%;
+    text-align: center;
+  }
+  body .title h2 {
+    color: #969696;
+    font-size: 18px;
+    margin: 0rem;
+    position: relative;
+    width: 50%;
+    left: 0rem;
+    bottom: 0rem;
+    text-align: center;
+  }
+  .navigation {
+    font-size: 12px;
+    top: 2rem;
+    right: 1rem;
+  }
+}
+
+.suggestion_form {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.suggestion_form form {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 0rem 12rem 2rem 8rem;
+}
+
+.suggestion_form form div:nth-child(1) {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 120px;
+  padding: 1rem 0rem;
+}
+
+.suggestion_form form div:nth-child(1) select {
+  margin: 1rem 0rem 0rem 0rem;
+  background-color: #fff;
+  border: 1px solid #ececec;
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+.suggestion_form form div:nth-child(1) select:hover {
+  border: 1px solid #474747;
+}
+
+.suggestion_form form div:nth-child(2) {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-flex: 4;
+      -ms-flex: 4;
+          flex: 4;
+  padding: 1rem 0rem;
+}
+
+.suggestion_form form div:nth-child(2) textarea {
+  margin: 1rem 0rem 0rem 0rem;
+  height: 100%;
+  border-style: none;
+}
+
+.suggestion_form form div:nth-child(3) {
+  -webkit-box-flex: 0;
+      -ms-flex: none;
+          flex: none;
+  padding: 0;
+  margin: 0;
+}
+
+.suggestion_form form .send_suggestion {
+  border-style: none;
+  width: 80px;
+  background-color: #cacaca;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  padding: 0.5rem 1rem;
+  float: right;
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+  margin: 0;
+  cursor: pointer;
+}
+
+.suggestion_form form .send_suggestion:hover {
+  background-color: #474747;
+  color: white;
+}
+
+.suggestion_form form .success {
+  background-color: #5cc44e;
+  color: white;
+}
+
+@media only screen and (max-width: 600px) {
+  .suggestion_form {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .suggestion_form form {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 2rem;
+  }
+  .suggestion_form form div:nth-child(1) {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 120px;
+    padding: 1rem 0rem;
+  }
+  .suggestion_form form div:nth-child(1) select {
+    margin: 1rem 0rem 0rem 0rem;
+    background-color: #fff;
+    border: 1px solid #ececec;
+    -webkit-transition: 0.2s ease-in-out;
+    transition: 0.2s ease-in-out;
+    cursor: pointer;
+  }
+  .suggestion_form form div:nth-child(1) select:hover {
+    border: 1px solid #474747;
+  }
+  .suggestion_form form div:nth-child(2) {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-flex: 4;
+        -ms-flex: 4;
+            flex: 4;
+    padding: 1rem 0rem;
+  }
+  .suggestion_form form div:nth-child(2) textarea {
+    margin: 1rem 0rem 0rem 0rem;
+    height: 100%;
+    border-style: none;
+  }
+  .suggestion_form form div:nth-child(3) {
+    -webkit-box-flex: 0;
+        -ms-flex: none;
+            flex: none;
+    padding: 0;
+    margin: 0;
+  }
+  .suggestion_form form .send_suggestion {
+    border-style: none;
+    width: 80px;
+    background-color: #cacaca;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding: 0.5rem 1rem;
+    float: right;
+    -webkit-transition: 0.2s ease-in-out;
+    transition: 0.2s ease-in-out;
+    margin: 0;
+    cursor: pointer;
+  }
+  .suggestion_form form .send_suggestion:hover {
+    background-color: #474747;
+    color: white;
+  }
+  .suggestion_form form .success {
+    background-color: #5cc44e;
+    color: white;
+  }
+}
+
+.submissions_box {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 1rem;
+  border: 4px solid #cacaca;
+  border-radius: 25px;
+  overflow-x: hidden;
+  overflow-y: auto;
+  max-height: 80vh;
+}
+
+.submissions_box .message {
+  padding: 1rem;
+  background-color: white;
+  border-radius: 25px;
+  margin: 0.5rem;
+}
+
+.submissions_box .message .delete {
+  float: right;
+  margin-right: 1rem;
+  font-size: 18px;
+  color: red;
+  border-radius: 50px;
+  border: 1px solid red;
+  height: 20px;
+  width: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.submissions_box .message .delete:hover {
+  color: white;
+  background-color: darkred;
+  border: 1px solid darkred;
+}
+/*# sourceMappingURL=styles.css.map */

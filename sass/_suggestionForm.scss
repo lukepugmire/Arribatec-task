@@ -1,0 +1,71 @@
+.suggestion_form {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  form {
+    @include defaultFlex;
+    margin: 0rem 12rem 2rem 8rem;
+    div:nth-child(1) {
+      @include defaultFlex;
+      width: 120px;
+      padding: 1rem 0rem;
+      select {
+        margin: 1rem 0rem 0rem 0rem;
+        background-color: #fff;
+        border: 1px solid rgb(236, 236, 236);
+        transition: 0.2s ease-in-out;
+        cursor: pointer;
+        &:hover {
+          border: 1px solid rgb(71, 71, 71);
+        }
+      }
+    }
+    div:nth-child(2) {
+      @include defaultFlex;
+      flex: 4;
+      padding: 1rem 0rem;
+      textarea {
+        margin: 1rem 0rem 0rem 0rem;
+        height: 100%;
+        border-style: none;
+      }
+    }
+    div:nth-child(3) {
+      flex: none;
+      padding: 0;
+      margin: 0;
+    }
+    .send_suggestion {
+      border-style: none;
+      width: 80px;
+      background-color: rgb(202, 202, 202);
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      padding: 0.5rem 1rem;
+      float: right;
+      transition: 0.2s ease-in-out;
+      margin: 0;
+      cursor: pointer;
+      &:hover {
+        background-color: rgb(71, 71, 71);
+        color: white;
+      }
+    }
+    .success {
+      background-color: rgb(92, 196, 78);
+      color: white;
+    }
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .suggestion_form {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    form {
+      @include defaultFlex;
+      margin: 2rem;
+    }
+  }
+}
